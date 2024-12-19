@@ -1,0 +1,375 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+    background-image: url('zaza.png');
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;         
+}
+
+label.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header{
+    min-height: 50px;
+    background-color: #121212;
+    color: aliceblue;
+    text-align: center;
+    padding:1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    margin: 0 auto;
+    position: sticky;
+    top: 0px;
+}
+
+header a.icon {
+    background: black;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: aliceblue;
+  }
+
+.logo{
+    padding: 0px 20px;
+    font-weight: bolder;
+}
+
+.logo > span{
+    color: rgb(35, 178, 111);
+    
+}
+
+.btnRej > a, .btnLog > a{
+    color: rgb(35, 178, 111);
+    text-decoration: none;
+}
+
+.btnRej > a{
+    color: aliceblue;
+}
+
+.btnLog > a:hover{
+    color: rgb(132, 70, 130);
+    transition: 0.3s;
+}
+
+.btnRej > a:hover{
+    color: rgb(132, 70, 130);
+    transition: 0.3s;
+}
+
+#btns{
+    display: flex;
+    gap:2em;
+    padding: 0px 20px;
+}
+
+#cover{
+    background-color: rgba(21, 21, 33, 0.704);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#MainContainer{
+    width: 25%;
+    /* border:1px solid red; */
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    /* background-color: #1a1a1a; */
+    border-radius: 20px;
+    padding-bottom: 20px;
+    min-height: 700px;
+}
+
+#title{
+    color: aliceblue;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    /* border: 1px solid red; */
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+#title > span{
+    color: rgb(35, 178, 111);
+}
+
+#FormTitle{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+form{
+    color: aliceblue;
+}
+
+form > label{
+    text-align: left;
+}
+
+form > input[type=text]{
+    background-color: rgba(21, 21, 33);
+    color: aliceblue;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 2em;
+    width: 100%;
+    border-radius: 3em;
+}
+
+form > input[type=text]:focus{
+    background-color: rgb(73, 38, 72);
+}
+
+button{
+    color: aliceblue;
+    background-color: rgb(35, 178, 111);
+    padding: 20px 50px;
+    border-radius: 3em;   
+}
+
+button:hover{
+    background-color: rgb(132, 70, 130); 
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form > input[type=radio]{
+    margin-bottom: 20px;
+}
+
+form > label{
+    color:rgb(35, 178, 111);
+}
+
+#resultTXT, #resultCALC{
+    display: none;
+}
+
+.Login{
+    width: 100%;
+    /* border: 2px solid rgb(35, 178, 111); */
+    width: 100%;
+    justify-content: center;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: #121212;
+}
+
+.Login > #title{
+    padding-top: 40px;
+}
+
+.Login-content{
+    /* border: 1px solid rgb(47, 162, 255); */
+    width: 80%;
+    color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Login > form > .Login-content > input[type=text], .Login > form > .Login-content > input[type=password]{
+    background-color: rgba(21, 21, 33);
+    border: 2px solid rgb(35, 178, 111);
+    color: aliceblue;
+    width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 2em;
+}
+
+.Login > .Login-content > form > input[type=text]:focus, .Login > form > .Login-content > input[type=password]:focus{
+    background-color: rgb(73, 38, 72);
+}
+
+.btns-flex{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.Login-btnsRej, .Login-btnsLog{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(35, 178, 111);
+    border: 2px solid rgb(35, 178, 111);
+    padding: 10%;
+    width: 100px;
+    text-align: center;
+    border-radius: 100vh;
+}
+
+.Login-btnsRej{
+    background-color: rgba(21, 21, 33, 0.704);
+}
+
+
+.Login-btnsRej:hover, .Login-btnsLog:hover{    
+    background-color: rgb(132, 70, 130);  
+    border: 2px solid rgb(132, 70, 130);
+    transition: 0.3s;  
+}
+
+.btns-flex > button{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(35, 178, 111);
+    border: 5px solid rgb(35, 178, 111);
+    padding: 10%;
+    width: 100px;
+    text-align: center;
+    border-radius: 100vh;
+}
+
+.btns-flex > button:hover{
+    background-color: rgb(132, 70, 130);  
+    border: 5px solid rgb(132, 70, 130);
+    transition: 0.3s;  
+}
+
+#ContainerX{
+    width: 100%;
+    display: flex;
+    min-height: 700px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#error{
+    color: rgb(255, 91, 119);
+    padding-bottom: 20px;
+    text-align: end;
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.zgody{
+    display: flex;
+    width: 100%;
+    align-items:start;
+    color: rgba(240, 248, 255, 0.69);
+}
+
+.ForPass, .ForPass > a {
+    color: rgba(35, 178, 111, 0.25);
+    text-align: end;
+}
+
+.ForPass > a:hover{
+    color: rgb(35, 178, 111);
+    transition: 0.3s;
+}
+
+#wartoscX{
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;    
+    border: 20px solid rgb(35, 178, 111);
+    width: 300px;
+    height: 300px;
+    background-color: rgba(21, 21, 33, 1);
+    border-radius: 100%;
+    position: absolute;
+    top: 33%;
+    font-size: 4em;
+}
+
+#footer{
+    min-height: 200px;
+    background-color: #121212;
+    text-align: center;
+    color: aliceblue;
+    padding-top: 2.5%;
+}
+
+/*----------------------------------------*/
+
+@media screen and (max-width: 1280px){
+    #MainContainer{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    #MainContainer{
+        width: 80%;
+    }
+
+    header{
+        overflow: hidden;
+        position: relative;
+        display: block;
+    }
+
+    header #btns{
+        display: none;
+    }
+
+    header a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 10%;
+        top: 1.2em;
+        color: aliceblue;
+      }
+
+    .logo{
+        padding: 0px;
+        margin-bottom: 2em;
+        text-align: left;
+    }
+
+    #btns{
+        display: block;
+        text-align: right;
+        padding-right: 10%;
+    }
+
+    .btnLog, .btnLRej{
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .btns-flex{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .Login-btnsLog, .Login-btnsRej{
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+}

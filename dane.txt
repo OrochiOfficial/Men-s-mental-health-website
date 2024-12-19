@@ -1,0 +1,5 @@
+pytanie1
+pytanie2
+pytanie3
+pytanie4
+pytanie5

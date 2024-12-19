@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+	<title>MensMentalHealth</title>
+	<meta http-equiv="X-UA-Campatible" content="IE=rdge,chrome=1" author="Tomasz Kotyła"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div id="cover">
+    <header>
+        <a href="index.html"><div class="logo"><span>Men's</span> Mental Health</div></a>
+
+        <div id="btns">
+            <div class="btnLog"><a href="index.html"><span>≪ Strona główna </span></a></div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="burger()">
+            <i class="fa fa-bars"></i>
+          </a>        
+    </header>
+
+    <div id="MainContainer">
+        <div class="Login">
+            <div id="title">Logowanie</div><br>
+                <form id="formik">
+                    <div class="Login-content">
+                        Adres e-mail <br></br>
+                        <input type="text" id="email" name="email" placeholder="  e-mail"><br></br>
+
+                        Hasło <br></br>
+                        <input type="password" id="haslo" name="haslo" placeholder="  Hasło"><br></br>
+                
+                    <!-- <button type="button">Prześlij formularz</button> -->
+                        <div id="error"></div>
+
+                    <div class="Login-content">
+                        <div class="btns-flex">
+                            <a href="#"><div class="Login-btnsRej">Rejestracja</div></a>
+                         <div class="btns-flex">
+                            <button type="button" onclick="getInfo()">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="Login-content">
+        <div class="ForPass"><a href="#">Zapomniałeś hasła? </a> </div>
+            <input type="checkbox" /> Zapamiętaj mnie!<br></br>
+
+                <hr color="gray"><br>
+                    
+                    <div class="zgody">
+                        <input type="checkbox" id="boX1"> 
+                            <label for="boX1">
+                                Wyrażam zgodę na otrzymywanie informacji hadlowych drogą elektroniczną od Administratora, oraz podmiotówtrzecich.
+                            </label>
+                    </div>
+
+                    <br>
+
+                    <div class="zgody">                    
+                        <input type="checkbox" /> Wyrażam zgodę na przetwarzanie moich danych osobowych
+                    </div>    
+                                       
+                    <br></br>
+        </div>
+    </div>
+</div>
+
+
+    <div id="footer">
+        tekścior
+    </div>
+
+</body>

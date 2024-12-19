@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+	<title>MensMentalHealth</title>
+	<meta http-equiv="X-UA-Campatible" content="IE=rdge,chrome=1" author="Tomasz Kotyła"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><div class="logo"><span>Men's</span> Mental Health</div></a>
+
+        <div id="btns">
+            <div class="btnLog"><a href="logowanie.html"><span>Logowanie</span></a></div>
+            <div class="btnRej"><a href="logowanie.html"><span>Rejestracja</span></a></div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="burger()">
+            <i class="fa fa-bars"></i>
+          </a>        
+    </header>
+<div id="cover">
+    <div id="MainContainer">
+        <div id="title"><span>Men's</span> Mental Health</div>
+
+        <div id="FormTitle"><span style="font-size: 20px">Formularz</style></span><br>
+        <i>Postaraj się odpowiadać zgodnie z prawdą</i></div>
+        
+            <form id="myForm">
+                <form>
+                    <label for="q1">Pytanie 1.</label><br></br>
+                    <input type="radio" name="opcja" value="q11" onchange="calcWynikQ1(1)"> opcja 1 <br>
+                    <input type="radio" name="opcja" value="q12" onchange="calcWynikQ1(2)"> opcja 2 <br>
+                    <input type="radio" name="opcja" value="q13" onchange="calcWynikQ1(3)"> opcja 3 <br>
+                    <input type="text" id="txt1" onInput="textWynik()" name="txt1" placeholder="  Szczegółowy opis sytuacji"><br></br>
+                </form>
+                                
+                <form>
+                    <label for="q2">Pytanie 2.</label><br></br>
+                    <input type="radio" name="opcja" value="q21" onchange="calcWynikQ2(1)"> opcja 1 <br>
+                    <input type="radio" name="opcja" value="q22" onchange="calcWynikQ2(2)"> opcja 2 <br>
+                    <input type="radio" name="opcja" value="q23" onchange="calcWynikQ2(3)"> opcja 3 <br>
+                    <input type="text" id="txt2" onInput="textWynik()" name="txt2" placeholder="  Szczegółowy opis sytuacji"><br></br>
+                </form>
+                                
+                <form>
+                    <label for="q3">Pytanie 3.</label> <br></br>
+                    <input type="radio" name="opcja" value="q31" onchange="calcWynikQ3(1)"> opcja 1 <br>
+                    <input type="radio" name="opcja" value="q32" onchange="calcWynikQ3(2)"> opcja 2 <br>
+                    <input type="radio" name="opcja" value="q33" onchange="calcWynikQ3(3)"> opcja 3 <br>
+                    <input type="text" id="txt3" onInput="textWynik()" name="txt3" placeholder="  Szczegółowy opis sytuacji"><br></br>
+                </form>
+                                
+                <form>
+                    <label for="q4">Pytanie 4.</label><br></br>
+                    <input type="radio" name="opcja" value="q41" onchange="calcWynikQ4(1)"> opcja 1 <br>
+                    <input type="radio" name="opcja" value="q42" onchange="calcWynikQ4(2)"> opcja 2 <br>
+                    <input type="radio" name="opcja" value="q43" onchange="calcWynikQ4(3)"> opcja 3 <br>
+                    <input type="text" id="txt4" onInput="textWynik()" name="txt4" placeholder="  Szczegółowy opis sytuacji"><br></br>
+                </form>
+                                
+                <form>
+                    <label for="q5">Pytanie 5.</label><br></br>
+                    <input type="radio" name="opcja" value="q51" onchange="calcWynikQ5(1)"> opcja 1 <br>
+                    <input type="radio" name="opcja" value="q52" onchange="calcWynikQ5(2)"> opcja 2 <br>
+                    <input type="radio" name="opcja" value="q53" onchange="calcWynikQ5(3)"> opcja 3 <br>
+                    <input type="text" id="txt5" onInput="textWynik()" name="txt5" placeholder="  Szczegółowy opis sytuacji"><br></br>
+                </form>                
+                
+                <form>
+                    <button type="button" onclick="pokazDane()"> Prześlij formularz</button>
+                </form>
+
+                <form>
+                    <!-- wynik kontrolny -->
+                    <span id="resultTXT"></span>
+                    <span id="resultCALC"></span>
+                </form>
+              
+            </form>
+        </div>        
+    </div>
+
+
+    </div>
+    <div id="footer">
+        tekścior
+    </div>
+</div>   
+</body>
